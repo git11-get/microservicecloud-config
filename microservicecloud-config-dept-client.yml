@@ -2,7 +2,6 @@ spring:
   profiles:
     active: dev
     
-
 ---
 server:
   port: 8001
@@ -23,8 +22,7 @@ spring:
       max-total: 5
       max-wait-millis: 200
       
-
- mybatis:
+mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.atguigu.springcloud.entities
   mapper-locations: classpath:mybatis/mapper/**/*.xml     
@@ -43,10 +41,7 @@ info:
   app.name: atguigu-microservicecloud
   company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
-  build.version: $project.version$
-  
-  
-  
+  build.version: $project.version$ 
 ---
 server:
   port: 8001
@@ -68,7 +63,7 @@ spring:
       max-wait-millis: 200
       
 
- mybatis:
+mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.atguigu.springcloud.entities
   mapper-locations: classpath:mybatis/mapper/**/*.xml     
